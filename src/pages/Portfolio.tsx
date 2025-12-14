@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ArrowUpRight, TrendingUp, Users, Eye, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { DISCOVERY_CALL_URL } from "@/lib/links";
 
 const categories = ["All", "Hospitality", "E-commerce", "Tech", "Lifestyle", "Food & Beverage"];
 
@@ -260,8 +261,10 @@ const Portfolio = () => {
               <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-8">
                 Join the brands that have achieved extraordinary growth with Limitless Media.
               </p>
-              <Button variant="hero" size="xl">
-                Start Your Journey
+              <Button asChild variant="hero" size="xl">
+                <a href={DISCOVERY_CALL_URL} target="_blank" rel="noreferrer">
+                  Get a free consultation
+                </a>
               </Button>
             </div>
           </motion.div>

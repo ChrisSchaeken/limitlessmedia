@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { DISCOVERY_CALL_URL } from "@/lib/links";
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
@@ -27,9 +28,11 @@ const Contact = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-                <Button variant="hero" size="xl">
-                  Book Free Consultation
-                  <ArrowRight className="ml-2" />
+                <Button asChild variant="hero" size="xl">
+                  <a href={DISCOVERY_CALL_URL} target="_blank" rel="noreferrer">
+                    Get a free consultation
+                    <ArrowRight className="ml-2" />
+                  </a>
                 </Button>
                 <Button variant="glass" size="xl">
                   View Our Work

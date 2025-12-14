@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { DISCOVERY_CALL_URL } from "@/lib/links";
 import { ArrowRight, Play } from "lucide-react";
 
 const Hero = () => {
@@ -33,9 +34,11 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: "0.3s" }}>
-            <Button variant="hero" size="xl">
-              Start Your Journey
-              <ArrowRight className="ml-2" />
+            <Button asChild variant="hero" size="xl">
+              <a href={DISCOVERY_CALL_URL} target="_blank" rel="noreferrer">
+                Get a free consultation
+                <ArrowRight className="ml-2" />
+              </a>
             </Button>
             <Button variant="glass" size="xl">
               <Play className="mr-2" size={18} />
@@ -44,10 +47,11 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 gap-8 mt-20 animate-slide-up" style={{ animationDelay: "0.4s" }}>
+          {/* <div className="grid grid-cols-2 gap-8 mt-20 animate-slide-up" style={{ animationDelay: "0.4s" }}> */}
+          {/* <div className="" style={{ animationDelay: "0.4s" }}>
             {[
-              { value: "50M+", label: "Total Reach" },
-              { value: "200%", label: "Avg. Growth" },
+              // { value: "50M+", label: "Total Reach" },
+              // { value: "200%", label: "Avg. Growth" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="font-display font-bold text-3xl md:text-4xl text-gradient mb-2">
@@ -56,7 +60,7 @@ const Hero = () => {
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
 

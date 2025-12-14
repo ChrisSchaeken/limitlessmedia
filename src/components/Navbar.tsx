@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { DISCOVERY_CALL_URL } from "@/lib/links";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -50,8 +51,10 @@ const Navbar = () => {
                 </Link>
               )
             )}
-            <Button variant="hero" size="default">
-              Get Started
+            <Button asChild variant="hero" size="default">
+              <a href={DISCOVERY_CALL_URL} target="_blank" rel="noreferrer">
+                Get a free consultation
+              </a>
             </Button>
           </div>
 
@@ -88,8 +91,10 @@ const Navbar = () => {
                 </Link>
               )
             )}
-            <Button variant="hero" size="default" className="w-fit">
-              Get Started
+            <Button asChild variant="hero" size="default" className="w-fit">
+              <a href={DISCOVERY_CALL_URL} target="_blank" rel="noreferrer">
+                Get a free consultation
+              </a>
             </Button>
           </div>
         )}
