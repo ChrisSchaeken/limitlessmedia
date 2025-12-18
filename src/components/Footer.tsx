@@ -14,9 +14,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center font-display font-bold text-primary-foreground">
-              L
-            </div>
+            <img
+              src="/Photos/logo.png"
+              alt="Limitless Media Logo"
+              className="w-8 h-8 rounded-lg"
+            />
             <span className="font-display font-bold">
               <span className="text-gradient">Limitless</span>
               <span className="text-foreground"> Media</span>

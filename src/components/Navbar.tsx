@@ -19,9 +19,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center font-display font-bold text-primary-foreground text-xl">
-              L
-            </div>
+            <img
+              src="/Photos/logo.png"
+              alt="Limitless Media Logo"
+              className="w-10 h-10 rounded-lg"
+            />
             <span className="font-display font-bold text-xl">
               <span className="text-gradient">Limitless</span>
               <span className="text-foreground"> Media</span>
