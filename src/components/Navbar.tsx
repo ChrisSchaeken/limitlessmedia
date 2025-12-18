@@ -9,7 +9,6 @@ const Navbar = () => {
 
   const navLinks = [
     { label: "Services", href: "#services" },
-    { label: "Portfolio", href: "/portfolio" },
     { label: "Contact", href: "#contact" },
   ];
 
