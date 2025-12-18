@@ -42,8 +42,8 @@ const Contact = () => {
               {/* Contact Info */}
               <div className="grid sm:grid-cols-3 gap-6 pt-8 border-t border-border/50">
                 {[
-                  { icon: Mail, label: "Email", value: "hello@limitlesmedia.com" },
-                  { icon: Phone, label: "Phone", value: "+353 1 234 5678" },
+                  { icon: Mail, label: "Email", value: "schaekencm@gmail.com" },
+                  { icon: Phone, label: "Phone", value: "+353892302064" },
                   { icon: MapPin, label: "Location", value: "Dublin, Ireland" },
                 ].map((item, index) => (
                   <div key={index} className="flex flex-col items-center gap-2">
